@@ -1,36 +1,25 @@
-import { Typography } from "@mui/material";
 import FlexBetween from "../components/FlexBetween";
+import RegularTxt from "../components/RegularTxt";
 
 const Navbar = () => {
   return (
-    <FlexBetween padding="1rem 6%" backgroundColor={"#333"}>
+    <FlexBetween
+      padding="1rem 6%"
+      backgroundColor={"#333"}
+      sx={{ height: "4vh" }}
+    >
       <FlexBetween gap="1.75rem">
-        <Typography fontWeight="bold" variant="h4" color="whitesmoke">
-          Anthony Bosek
-        </Typography>
+        <div className="title">Anthony Bosek</div>
       </FlexBetween>
 
       <FlexBetween gap="2.25rem">
-        <Typography
-          fontWeight="regular"
-          variant="h6"
-          color="whitesmoke"
-          sx={{ borderBottom: "1px solid whitesmoke" }}
-        >
+        <RegularTxt sx={{ borderBottom: "1px solid whitesmoke" }}>
           Home
-        </Typography>
-        <Typography fontWeight="regular" variant="h6" color="whitesmoke">
-          About
-        </Typography>
-        <Typography fontWeight="regular" variant="h6" color="whitesmoke">
-          Skills
-        </Typography>
-        <Typography fontWeight="regular" variant="h6" color="whitesmoke">
-          Projects
-        </Typography>
-        <Typography fontWeight="regular" variant="h6" color="whitesmoke">
-          Contact
-        </Typography>
+        </RegularTxt>
+        <RegularTxt>About</RegularTxt>
+        <RegularTxt>Skills</RegularTxt>
+        <RegularTxt>Projects</RegularTxt>
+        <RegularTxt>Contact</RegularTxt>
       </FlexBetween>
     </FlexBetween>
   );
