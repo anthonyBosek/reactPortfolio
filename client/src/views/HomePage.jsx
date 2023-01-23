@@ -1,9 +1,13 @@
-import { Box } from "@mui/material";
+import { Box, IconButton } from "@mui/material";
 import FlexBetween from "../components/FlexBetween";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import MailOutlineIcon from "@mui/icons-material/MailOutline";
 
 const HomePage = () => {
   return (
     <Box className="home-page">
+      {/* WELCOME BANNER */}
       <FlexBetween
         maxWidth="50vw"
         flexDirection="column"
@@ -30,6 +34,18 @@ const HomePage = () => {
           Check out some of my projects, read a little about me, & reach out if
           you want to know more.
         </Box>
+        {/* SOCIAL LINKS */}
+        <FlexBetween mt="2vh">
+          <IconButton>
+            <LinkedInIcon sx={{ fontSize: "30px", color: "#555" }} />
+          </IconButton>
+          <IconButton>
+            <GitHubIcon sx={{ fontSize: "30px", color: "#555" }} />
+          </IconButton>
+          <IconButton>
+            <MailOutlineIcon sx={{ fontSize: "30px", color: "#555" }} />
+          </IconButton>
+        </FlexBetween>
       </FlexBetween>
     </Box>
   );
