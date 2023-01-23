@@ -24,7 +24,7 @@ const HomePage = () => {
         <Box fontSize="26px" fontWeight="500" m="2vh 0">
           Software Developer
         </Box>
-        <Box width="15%" borderBottom="1px solid #555" />
+        <Box width="15%" borderBottom="1px solid dodgerblue" />
         <Box maxWidth="60%" textAlign="center" m="2vh 0">
           Hey, I’m Anthony Bosek. I’m a software developer remotely based in
           Phoenix, AZ. I love to problem solve, write code, & get involved in
@@ -37,13 +37,31 @@ const HomePage = () => {
         {/* SOCIAL LINKS */}
         <FlexBetween mt="2vh">
           <IconButton>
-            <LinkedInIcon sx={{ fontSize: "30px", color: "#555" }} />
+            <LinkedInIcon
+              sx={{
+                fontSize: "30px",
+                color: "#555",
+                "&:hover": { color: "dodgerblue" },
+              }}
+            />
           </IconButton>
           <IconButton>
-            <GitHubIcon sx={{ fontSize: "30px", color: "#555" }} />
+            <GitHubIcon
+              sx={{
+                fontSize: "30px",
+                color: "#555",
+                "&:hover": { color: "dodgerblue" },
+              }}
+            />
           </IconButton>
           <IconButton>
-            <MailOutlineIcon sx={{ fontSize: "30px", color: "#555" }} />
+            <MailOutlineIcon
+              sx={{
+                fontSize: "30px",
+                color: "#555",
+                "&:hover": { color: "dodgerblue" },
+              }}
+            />
           </IconButton>
         </FlexBetween>
       </FlexBetween>

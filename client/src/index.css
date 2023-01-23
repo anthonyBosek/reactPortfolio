@@ -9,6 +9,8 @@ body,
   padding: 0;
   margin: 0;
   font-family: "Outfit", sans-serif;
+  background-image: url("assets/images/bg.jpg");
+  background-size: cover;
 }
 
 .title {
@@ -16,10 +18,25 @@ body,
   font-size: 1.75rem;
   color: whitesmoke;
 }
+.title:hover {
+  cursor: pointer;
+  color: dodgerblue;
+}
+.link {
+  text-decoration: none;
+  color: whitesmoke;
+}
+.link:hover {
+  color: dodgerblue;
+}
+.active {
+  border-bottom: 1px solid dodgerblue;
+}
 
-.home-page {
+/* .home-page,
+.about-page {
   background-image: url("assets/images/bg.jpg");
   background-size: cover;
   background-position: center;
   height: 91.5vh;
-}
+} */
