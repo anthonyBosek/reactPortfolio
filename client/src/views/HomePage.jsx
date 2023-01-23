@@ -5,31 +5,28 @@ const HomePage = () => {
   return (
     <Box className="home-page">
       <FlexBetween
-        height="54vh"
-        width="54vw"
+        maxWidth="50vw"
         flexDirection="column"
-        justifyContent="center"
-        // backgroundColor="rgba(254,254,254,0.4)"
         sx={{
           position: "absolute",
-          right: "4vw",
-          top: "15vh",
-          border: "2px solid red",
+          right: "6vw",
+          top: "20vh",
           color: "whitesmoke",
         }}
       >
-        <Box fontSize="52px" fontWeight="600">
+        <Box fontSize="54px" fontWeight="600">
           Anthony Bosek
         </Box>
-        <Box fontSize="32px" fontWeight="500">
+        <Box fontSize="26px" fontWeight="500" m="2vh 0">
           Software Developer
         </Box>
-        <Box>
+        <Box width="15%" borderBottom="1px solid #555" />
+        <Box maxWidth="60%" textAlign="center" m="2vh 0">
           Hey, I’m Anthony Bosek. I’m a software developer remotely based in
           Phoenix, AZ. I love to problem solve, write code, & get involved in
           the recovery community.
         </Box>
-        <Box>
+        <Box maxWidth="48%" textAlign="center">
           Check out some of my projects, read a little about me, & reach out if
           you want to know more.
         </Box>
