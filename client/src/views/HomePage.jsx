@@ -1,3 +1,4 @@
+// import { Link } from "react-router-dom";
 import { Box, IconButton } from "@mui/material";
 import FlexBetween from "../components/FlexBetween";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -36,33 +37,39 @@ const HomePage = () => {
         </Box>
         {/* SOCIAL LINKS */}
         <FlexBetween mt="2vh">
-          <IconButton>
-            <LinkedInIcon
-              sx={{
-                fontSize: "30px",
-                color: "#555",
-                "&:hover": { color: "dodgerblue" },
-              }}
-            />
-          </IconButton>
-          <IconButton>
-            <GitHubIcon
-              sx={{
-                fontSize: "30px",
-                color: "#555",
-                "&:hover": { color: "dodgerblue" },
-              }}
-            />
-          </IconButton>
-          <IconButton>
-            <MailOutlineIcon
-              sx={{
-                fontSize: "30px",
-                color: "#555",
-                "&:hover": { color: "dodgerblue" },
-              }}
-            />
-          </IconButton>
+          <a href="https://www.linkedin.com/in/anthonyBosek/">
+            <IconButton>
+              <LinkedInIcon
+                sx={{
+                  fontSize: "30px",
+                  color: "#555",
+                  "&:hover": { color: "dodgerblue" },
+                }}
+              />
+            </IconButton>
+          </a>
+          <a href="https://github.com/anthonyBosek">
+            <IconButton>
+              <GitHubIcon
+                sx={{
+                  fontSize: "30px",
+                  color: "#555",
+                  "&:hover": { color: "dodgerblue" },
+                }}
+              />
+            </IconButton>
+          </a>
+          <a href="https://mail.google.com">
+            <IconButton>
+              <MailOutlineIcon
+                sx={{
+                  fontSize: "30px",
+                  color: "#555",
+                  "&:hover": { color: "dodgerblue" },
+                }}
+              />
+            </IconButton>
+          </a>
         </FlexBetween>
       </FlexBetween>
     </Box>
