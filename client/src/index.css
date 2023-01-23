@@ -30,13 +30,6 @@ body,
   color: dodgerblue;
 }
 .active {
+  padding-bottom: 2px;
   border-bottom: 1px solid dodgerblue;
 }
-
-/* .home-page,
-.about-page {
-  background-image: url("assets/images/bg.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 91.5vh;
-} */
