@@ -13,6 +13,7 @@ body,
   background-size: cover;
 }
 
+/* NAVBAR */
 .title {
   font-weight: bold;
   font-size: 1.75rem;
@@ -31,5 +32,24 @@ body,
 }
 .active {
   padding-bottom: 2px;
+  border-bottom: 1px solid dodgerblue;
+}
+
+/* CONTAINER */
+.container {
+  height: 75vh;
+  width: 75vw;
+  margin: 8vh auto;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  /* border-radius: 10px; */
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.header {
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 auto;
+  padding: 2rem 0 1rem 0;
+  color: whitesmoke;
   border-bottom: 1px solid dodgerblue;
 }

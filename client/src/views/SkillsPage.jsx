@@ -1,7 +1,12 @@
-import React from "react";
+import { Box } from "@mui/material";
+import FlexBetween from "../components/FlexBetween";
 
 const SkillsPage = () => {
-  return <div>SkillsPage</div>;
+  return (
+    <FlexBetween>
+      <Box className="container"></Box>
+    </FlexBetween>
+  );
 };
 
 export default SkillsPage;
