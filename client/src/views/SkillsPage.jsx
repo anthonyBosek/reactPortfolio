@@ -1,4 +1,5 @@
 import { Box } from "@mui/material";
+import RegularTxt from "../components/RegularTxt";
 import FlexBetween from "../components/FlexBetween";
 import antDesign from "../assets/images/antDesign.png";
 import d3 from "../assets/images/d3.png";
@@ -19,20 +20,24 @@ const SkillsPage = () => {
   return (
     <FlexBetween>
       <Box className="container">
-        <img src={antDesign} alt="test" width="100px" />
-        <img src={d3} alt="test" width="100px" />
-        <img src={express} alt="test" width="100px" />
-        <img src={graphQL} alt="test" width="100px" />
-        <img src={js} alt="test" width="100px" />
+        <RegularTxt>Mern Stack</RegularTxt>
         <img src={mongo} alt="test" width="100px" />
-        <img src={mui} alt="test" width="100px" />
-        <img src={nivo} alt="test" width="100px" />
-        <img src={node} alt="test" width="100px" />
-        <img src={npm} alt="test" width="100px" />
+        <img src={express} alt="test" width="100px" />
         <img src={react} alt="test" width="100px" />
         <img src={redux} alt="test" width="100px" />
+        <img src={node} alt="test" width="100px" />
+        <img src={npm} alt="test" width="100px" />
+        <RegularTxt>Styling</RegularTxt>
         <img src={sass} alt="test" width="100px" />
+        <img src={mui} alt="test" width="100px" />
         <img src={tailwind} alt="test" width="100px" />
+        <img src={antDesign} alt="test" width="100px" />
+        <RegularTxt>Data Visualization</RegularTxt>
+        <img src={d3} alt="test" width="100px" />
+        <img src={nivo} alt="test" width="100px" />
+        <RegularTxt>API</RegularTxt>
+        <img src={graphQL} alt="test" width="100px" />
+        <img src={js} alt="test" width="100px" />
       </Box>
     </FlexBetween>
   );
