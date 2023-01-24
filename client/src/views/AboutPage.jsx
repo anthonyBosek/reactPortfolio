@@ -12,6 +12,7 @@ const AboutPage = () => {
             ...about
           </RegularTxt>
         </Box>
+
         <Box
           display="grid"
           height="70%"
@@ -20,13 +21,9 @@ const AboutPage = () => {
           gridTemplateColumns="30% 70%"
         >
           <Box borderRight="1px solid #333" padding="1rem">
-            <img
-              src={avatar}
-              alt="avatar"
-              width="90%"
-              // style={{ borderRadius: "50%" }}
-            />
+            <img src={avatar} alt="avatar" width="90%" />
           </Box>
+
           <Box sx={{ padding: "1rem" }}>
             <RegularTxt sx={{ textAlign: "center", fontSize: "1.2rem" }}>
               I’m Anthony. I’m a web developer and software engineer. I
@@ -45,25 +42,26 @@ const AboutPage = () => {
                 }}
               />
             </RegularTxt>
+
             <ul>
               <li>
-                <span style={{ color: "#333", paddingRight: "1rem" }}>▶</span>
+                <span className="arrow">▶</span>
                 <b>birthday:</b> April 10, 1981
               </li>
               <li>
-                <span style={{ color: "#333", paddingRight: "1rem" }}>▶</span>
+                <span className="arrow">▶</span>
                 <b>location:</b> Phoenix, AZ
               </li>
               <li>
-                <span style={{ color: "#333", paddingRight: "1rem" }}>▶</span>
+                <span className="arrow">▶</span>
                 <b>experience:</b> 2+ years
               </li>
               <li>
-                <span style={{ color: "#333", paddingRight: "1rem" }}>▶</span>
+                <span className="arrow">▶</span>
                 <b>email:</b> anthony.bosek@gmail.com
               </li>
               <li>
-                <span style={{ color: "#333", paddingRight: "1rem" }}>▶</span>
+                <span className="arrow">▶</span>
                 <b>cell:</b> 480) 236 - 9069
               </li>
             </ul>

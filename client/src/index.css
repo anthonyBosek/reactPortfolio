@@ -40,10 +40,9 @@ body,
   height: 75vh;
   width: 75vw;
   margin: 8vh auto;
-  border: 1px solid rgba(255, 255, 255, 0.1);
   color: whitesmoke;
-  /* border-radius: 10px; */
   background-color: rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 .header {
   width: 80%;
@@ -51,7 +50,6 @@ body,
   justify-content: flex-end;
   margin: 0 auto;
   padding: 2rem 0 1rem 0;
-  /* color: whitesmoke; */
   border-bottom: 1px solid #333;
 }
 ul,
@@ -59,4 +57,8 @@ li {
   list-style: none;
   padding: 0;
   margin: 1rem;
+}
+.arrow {
+  color: #333;
+  padding-right: 1rem;
 }
