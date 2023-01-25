@@ -17,27 +17,27 @@ const SkillsPage = () => {
 
         {/* PAGE CONTENT */}
         <Box
-          display="grid"
-          height="80%"
-          width="80%"
           m="0 auto"
-          gridTemplateColumns="64% 34%"
           gap="2%"
+          width="80%"
+          height="80%"
+          display="grid"
+          gridTemplateColumns="64% 34%"
         >
           <Box
-            display="grid"
             height="90%"
             width="100%"
+            display="grid"
             m="1.5rem auto 0 auto"
-            gridTemplateColumns="repeat(2, 1fr)"
             gridTemplateRows="repeat(4, 1fr)"
+            gridTemplateColumns="repeat(2, 1fr)"
           >
             {languageArray.map(({ header, span, languages }) => (
               <Box key={header} gridColumn={span}>
                 <RegularTxt
-                  borderBottom="1px solid dodgerblue"
                   pb="2px"
                   width="fit-content"
+                  borderBottom="1px solid dodgerblue"
                 >
                   {header}
                 </RegularTxt>
@@ -49,12 +49,17 @@ const SkillsPage = () => {
               </Box>
             ))}
           </Box>
-          <Box mt="1.5rem" borderLeft="1px solid #333" pl="2rem">
+          <Box
+            pl="2rem"
+            mt="1.5rem"
+            height="fit-content"
+            borderLeft="1px solid #333"
+          >
             <RegularTxt
-              borderBottom="1px solid dodgerblue"
               pb="2px"
-              width="fit-content"
               mb="2rem"
+              width="fit-content"
+              borderBottom="1px solid dodgerblue"
             >
               soft skills
             </RegularTxt>

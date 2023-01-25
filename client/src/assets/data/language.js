@@ -49,10 +49,6 @@ export const languageArray = [
         src: redux,
         alt: "redux",
       },
-      {
-        src: npm,
-        alt: "npm",
-      },
     ],
   },
   {
@@ -82,38 +78,6 @@ export const languageArray = [
     ],
   },
   {
-    header: "data-vis",
-    span: "1 / 2",
-    languages: [
-      {
-        src: d3,
-        alt: "d3",
-      },
-      {
-        src: nivo,
-        alt: "nivo",
-      },
-    ],
-  },
-  {
-    header: "api",
-    span: "2 / 3",
-    languages: [
-      {
-        src: axios,
-        alt: "axios",
-      },
-      {
-        src: mongoose,
-        alt: "mongoose",
-      },
-      {
-        src: graphQL,
-        alt: "graphQL",
-      },
-    ],
-  },
-  {
     header: "back-end",
     span: "1 / 3",
     languages: [
@@ -133,6 +97,42 @@ export const languageArray = [
       {
         src: aws,
         alt: "aws",
+      },
+      {
+        src: npm,
+        alt: "npm",
+      },
+    ],
+  },
+  {
+    header: "api",
+    span: "1 / 2",
+    languages: [
+      {
+        src: axios,
+        alt: "axios",
+      },
+      {
+        src: mongoose,
+        alt: "mongoose",
+      },
+      {
+        src: graphQL,
+        alt: "graphQL",
+      },
+    ],
+  },
+  {
+    header: "data-vis",
+    span: "2 / 3",
+    languages: [
+      {
+        src: d3,
+        alt: "d3",
+      },
+      {
+        src: nivo,
+        alt: "nivo",
       },
     ],
   },

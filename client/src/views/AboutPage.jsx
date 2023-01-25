@@ -38,7 +38,7 @@ const AboutPage = () => {
                 sx={{
                   maxWidth: "8vw",
                   borderBottom: "1px solid dodgerblue",
-                  margin: "1rem auto",
+                  margin: "1rem auto 2rem auto",
                 }}
               />
             </RegularTxt>
