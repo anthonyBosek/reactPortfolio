@@ -1,28 +1,13 @@
 import { Box } from "@mui/material";
 import RegularTxt from "../components/RegularTxt";
 import FlexBetween from "../components/FlexBetween";
-import antDesign from "../assets/images/antDesign.png";
-import css from "../assets/images/css.png";
-import d3 from "../assets/images/d3.png";
-import express from "../assets/images/express.png";
-import graphQL from "../assets/images/graphQL.png";
-import html from "../assets/images/html.png";
-import jquery from "../assets/images/jquery.png";
-import js from "../assets/images/js.png";
-import mongo from "../assets/images/mongo.png";
-import mui from "../assets/images/mui.png";
-import nivo from "../assets/images/nivo.png";
-import node from "../assets/images/node.png";
-import npm from "../assets/images/npm.png";
-import react from "../assets/images/react.png";
-import redux from "../assets/images/redux.png";
-import sass from "../assets/images/sass.png";
-import tailwind from "../assets/images/tailwind.png";
 import LogoCard from "../components/LogoCard";
+import { languageArray, softSkillsArray } from "../assets/data/language";
 
 const SkillsPage = () => {
   return (
     <FlexBetween>
+      {/* CONTAINER */}
       <Box className="container">
         <Box className="header">
           <RegularTxt sx={{ fontSize: "2rem", marginRight: "2rem" }}>
@@ -30,90 +15,59 @@ const SkillsPage = () => {
           </RegularTxt>
         </Box>
 
+        {/* PAGE CONTENT */}
         <Box
           display="grid"
           height="80%"
           width="80%"
           m="0 auto"
-          gridTemplateColumns="69% 29%"
-          // gridTemplateRows="repeat(3, 1fr)"
+          gridTemplateColumns="64% 34%"
           gap="2%"
         >
-          <Box>
-            <RegularTxt>front-end</RegularTxt>
-            <Box display="flex" justifyContent="flex-start">
-              <LogoCard src={react} alt="react" />
-              <LogoCard src={express} alt="express" />
-              <LogoCard src={mongo} alt="mongo" />
-              <LogoCard src={node} alt="node" />
-            </Box>
+          <Box
+            display="grid"
+            height="90%"
+            width="100%"
+            m="1.5rem auto 0 auto"
+            gridTemplateColumns="repeat(2, 1fr)"
+            gridTemplateRows="repeat(4, 1fr)"
+          >
+            {languageArray.map(({ header, span, languages }) => (
+              <Box key={header} gridColumn={span}>
+                <RegularTxt
+                  borderBottom="1px solid dodgerblue"
+                  pb="2px"
+                  width="fit-content"
+                >
+                  {header}
+                </RegularTxt>
+                <Box display="flex" justifyContent="flex-start">
+                  {languages.map(({ src, alt }) => (
+                    <LogoCard key={alt} src={src} alt={alt} />
+                  ))}
+                </Box>
+              </Box>
+            ))}
           </Box>
-          {/* <Box>
-            <RegularTxt>mern stack</RegularTxt>
-            <Box display="flex" justifyContent="flex-start">
-              <LogoCard src={react} alt="react" />
-              <LogoCard src={express} alt="express" />
-              <LogoCard src={mongo} alt="mongo" />
-              <LogoCard src={node} alt="node" />
-            </Box>
-          </Box>
-          <Box>
-            <RegularTxt>state mgmt</RegularTxt>
-            <Box display="flex" justifyContent="flex-start">
-              <LogoCard src={redux} alt="redux" />
-            </Box>
-          </Box>
-          <Box>
-            <RegularTxt>javaScript</RegularTxt>
-            <Box display="flex" justifyContent="flex-start">
-              <LogoCard src={js} alt="js" />
-              <LogoCard src={jquery} alt="jquery" />
-            </Box>
-          </Box>
-          <Box gridColumn="span 2">
-            <RegularTxt>ui/css</RegularTxt>
-            <Box
-              display="flex"
-              justifyContent="flex-start"
-              // backgroundColor="rgba(0, 0, 0, 0.5)"
-              // border="1px solid rgba(255, 255, 255, 0.5)"
+          <Box mt="1.5rem" borderLeft="1px solid #333" pl="2rem">
+            <RegularTxt
+              borderBottom="1px solid dodgerblue"
+              pb="2px"
+              width="fit-content"
+              mb="2rem"
             >
-              <LogoCard src={sass} alt="sass" />
-              <LogoCard src={mui} alt="mui" />
-              <LogoCard src={tailwind} alt="tailwind" />
-              <LogoCard src={antDesign} alt="antDesign" />
-            </Box>
+              soft skills
+            </RegularTxt>
+            <ul>
+              {softSkillsArray.map((skill, i) => (
+                <li key={i}>
+                  <span className="arrow">▶</span>
+                  {skill}
+                </li>
+              ))}
+            </ul>
           </Box>
-          <Box>
-            <RegularTxt>data visualization</RegularTxt>
-            <Box display="flex" justifyContent="flex-start">
-              <LogoCard src={d3} alt="d3" />
-              <LogoCard src={nivo} alt="nivo" />
-            </Box>
-          </Box> */}
         </Box>
-
-        {/* <RegularTxt>Mern Stack</RegularTxt>
-        <img src={mongo} alt="test" width="100px" />
-        <img src={express} alt="test" width="100px" />
-        <Box width="4vw">
-          <img src={react} alt="test" width="100%" />
-        </Box>
-
-        <img src={redux} alt="test" width="100px" />
-        <img src={node} alt="test" width="100px" />
-        <img src={npm} alt="test" width="100px" />
-        <RegularTxt>Styling</RegularTxt>
-        <img src={sass} alt="test" width="100px" />
-        <img src={mui} alt="test" width="100px" />
-        <img src={tailwind} alt="test" width="100px" />
-        <img src={antDesign} alt="test" width="100px" />
-        <RegularTxt>Data Visualization</RegularTxt>
-        <img src={d3} alt="test" width="100px" />
-        <img src={nivo} alt="test" width="100px" />
-        <RegularTxt>API</RegularTxt>
-        <img src={graphQL} alt="test" width="100px" />
-        <img src={js} alt="test" width="100px" /> */}
       </Box>
     </FlexBetween>
   );
