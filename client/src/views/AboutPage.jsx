@@ -20,11 +20,11 @@ const AboutPage = () => {
           m="2rem auto"
           gridTemplateColumns="30% 70%"
         >
-          <Box borderRight="1px solid #333" padding="1rem">
-            <img src={avatar} alt="avatar" width="90%" />
+          <Box m="1rem 1rem 0 0">
+            <img src={avatar} alt="avatar" width="100%" />
           </Box>
 
-          <Box sx={{ padding: "1rem" }}>
+          <Box p="1rem" borderLeft="1px solid #333">
             <RegularTxt sx={{ textAlign: "center", fontSize: "1.2rem" }}>
               I’m Anthony. I’m a web developer and software engineer. I
               specialize in the <b>MERN</b> stack with an emphasis on logic and
