@@ -150,3 +150,19 @@ export const softSkillsArray = [
   "organization",
   "creativity",
 ];
+
+export const specsArray = [
+  "Responsive Web Design",
+  "JS Algorithms & Data Structure",
+  "Front-End Libs",
+  "Data Visualization",
+  "APIs & Microservices",
+  "Info Security & Quality Assurance",
+];
+export const vitalsArray = [
+  { label: "birthday", value: "April 10, 1981" },
+  { label: "location", value: "Phoenix, AZ" },
+  { label: "experience", value: "2+ years" },
+  { label: "email", value: "anthony.bosek@gmail.com" },
+  { label: "cell", value: "480) 236 - 9069" },
+];

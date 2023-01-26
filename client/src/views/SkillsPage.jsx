@@ -2,6 +2,7 @@ import { Box } from "@mui/material";
 import RegularTxt from "../components/RegularTxt";
 import FlexBetween from "../components/FlexBetween";
 import LogoCard from "../components/LogoCard";
+import Arrow from "../components/Arrow";
 import { languageArray, softSkillsArray } from "../assets/data/language";
 
 const SkillsPage = () => {
@@ -29,6 +30,7 @@ const SkillsPage = () => {
             width="100%"
             display="grid"
             m="1.5rem auto 0 auto"
+            pl="2rem"
             gridTemplateRows="repeat(4, 1fr)"
             gridTemplateColumns="repeat(2, 1fr)"
           >
@@ -66,7 +68,7 @@ const SkillsPage = () => {
             <ul>
               {softSkillsArray.map((skill, i) => (
                 <li key={i}>
-                  <span className="arrow">▶</span>
+                  <Arrow />
                   {skill}
                 </li>
               ))}

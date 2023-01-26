@@ -1,7 +1,9 @@
 import { Box } from "@mui/material";
 import FlexBetween from "../components/FlexBetween";
+import Arrow from "../components/Arrow";
 import RegularTxt from "../components/RegularTxt";
 import avatar from "../assets/images/avatar.jpg";
+import { specsArray, vitalsArray } from "../assets/data/language";
 
 const AboutPage = () => {
   return (
@@ -26,7 +28,7 @@ const AboutPage = () => {
 
           <Box p="1rem" borderLeft="1px solid #333">
             <RegularTxt sx={{ textAlign: "center", fontSize: "1.2rem" }}>
-              I’m Anthony. I’m a web developer and software engineer. I
+              I’m Anthony. I’m a certified software developer & engineer. I
               specialize in the <b>MERN</b> stack with an emphasis on logic and
               functionality. I have a working knowledge of{" "}
               <b>
@@ -43,28 +45,29 @@ const AboutPage = () => {
               />
             </RegularTxt>
 
-            <ul>
-              <li>
-                <span className="arrow">▶</span>
-                <b>birthday:</b> April 10, 1981
-              </li>
-              <li>
-                <span className="arrow">▶</span>
-                <b>location:</b> Phoenix, AZ
-              </li>
-              <li>
-                <span className="arrow">▶</span>
-                <b>experience:</b> 2+ years
-              </li>
-              <li>
-                <span className="arrow">▶</span>
-                <b>email:</b> anthony.bosek@gmail.com
-              </li>
-              <li>
-                <span className="arrow">▶</span>
-                <b>cell:</b> 480) 236 - 9069
-              </li>
-            </ul>
+            <FlexBetween>
+              <Box>
+                <ul>
+                  {specsArray.map((spec, i) => (
+                    <li key={i}>
+                      <Arrow />
+                      <b>{spec}</b>
+                    </li>
+                  ))}
+                </ul>
+              </Box>
+              <Box>
+                <RegularTxt ml="2rem">specifics:</RegularTxt>
+                <ul>
+                  {vitalsArray.map(({ label, value }, i) => (
+                    <li key={i}>
+                      <Arrow />
+                      <b>{`${label}:`}</b> {value}
+                    </li>
+                  ))}
+                </ul>
+              </Box>
+            </FlexBetween>
           </Box>
         </Box>
       </Box>
