@@ -22,7 +22,7 @@ import tailwind from "../images/tailwind.png";
 
 export const languageArray = [
   {
-    header: "front-end",
+    header: "frontend/ui",
     span: "1 / 3",
     languages: [
       {
@@ -52,7 +52,8 @@ export const languageArray = [
     ],
   },
   {
-    header: "ui/ux",
+    header: "",
+    // header: "ui/ux",
     span: "1 / 3",
     languages: [
       {
@@ -78,7 +79,9 @@ export const languageArray = [
     ],
   },
   {
-    header: "back-end",
+    header: "server/api",
+    // header: "full-stack",
+    // header: "back-end",
     span: "1 / 3",
     languages: [
       {
@@ -105,7 +108,8 @@ export const languageArray = [
     ],
   },
   {
-    header: "api",
+    header: "",
+    // header: "api",
     span: "1 / 2",
     languages: [
       {
@@ -160,7 +164,7 @@ export const specsArray = [
   "Info Security & Quality Assurance",
 ];
 export const vitalsArray = [
-  { label: "birthday", value: "April 10, 1981" },
+  { label: "birthday", value: "xxxxxxx" },
   { label: "location", value: "Phoenix, AZ" },
   { label: "experience", value: "2+ years" },
   { label: "email", value: "anthony.bosek@gmail.com" },
