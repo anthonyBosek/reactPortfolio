@@ -9,17 +9,56 @@ body,
   padding: 0;
   margin: 0;
   font-family: "Outfit", sans-serif;
+  background-image: url("assets/images/bg.jpg");
+  background-size: cover;
 }
 
+/* NAVBAR */
 .title {
   font-weight: bold;
   font-size: 1.75rem;
   color: whitesmoke;
 }
+.title:hover {
+  cursor: pointer;
+  color: dodgerblue;
+}
+.link {
+  text-decoration: none;
+  color: whitesmoke;
+}
+.link:hover {
+  color: dodgerblue;
+}
+.active {
+  padding-bottom: 2px;
+  border-bottom: 1px solid dodgerblue;
+}
 
-.home-page {
-  background-image: url("assets/images/bg.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 91.5vh;
+/* CONTAINER */
+.container {
+  height: 75vh;
+  width: 75vw;
+  margin: 8vh auto;
+  color: whitesmoke;
+  background-color: rgba(0, 0, 0, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.header {
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 auto;
+  padding: 1rem 0 1rem 0;
+  border-bottom: 1px solid #333;
+}
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0 1rem;
+}
+.arrow {
+  color: #333;
+  padding-right: 1rem;
 }
