@@ -12,6 +12,22 @@ const ContactPage = () => {
             ...reach out
           </RegularTxt>
         </Box>
+        <Box>
+          <RegularTxt
+            pb="2px"
+            width="fit-content"
+            borderBottom="1px solid dodgerblue"
+          >
+            Email
+          </RegularTxt>
+          <RegularTxt
+            pb="2px"
+            width="fit-content"
+            borderBottom="1px solid dodgerblue"
+          >
+            Socials
+          </RegularTxt>
+        </Box>
       </Box>
     </FlexBetween>
   );
