@@ -1,3 +1,8 @@
+// need to complete this page
+// get email setup done
+// get socials setup done
+// get contact form setup done
+
 import { Box } from "@mui/material";
 import FlexBetween from "../components/FlexBetween";
 import RegularTxt from "../components/RegularTxt";
