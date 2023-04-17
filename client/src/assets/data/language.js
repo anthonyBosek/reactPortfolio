@@ -165,7 +165,7 @@ export const specsArray = [
 ];
 export const vitalsArray = [
   { label: "awesome", value: "yes" },
-  { label: "birthday", value: "xxxxxxx" },
+  // { label: "birthday", value: "xxxxxxx" },
   { label: "location", value: "Phoenix, AZ" },
   { label: "experience", value: "2+ years" },
   { label: "email", value: "anthony.bosek@gmail.com" },
