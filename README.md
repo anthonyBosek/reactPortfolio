@@ -8,7 +8,7 @@
 
 ## Use
 
-To view the site, go to [https://anthonybosek.com](https://anthonybosek.com)
+To view the site, go to [https://anthony-bosek.vercel.app](https://anthony-bosek.vercel.app)
 
 ```bash
 npm run start
