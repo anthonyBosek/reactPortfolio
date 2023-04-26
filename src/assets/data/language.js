@@ -164,10 +164,11 @@ export const specsArray = [
   "Info Security & Quality Assurance",
 ];
 export const vitalsArray = [
-  { label: "awesome", value: "yes" },
+  // { label: "awesome", value: "yes" },
   // { label: "birthday", value: "xxxxxxx" },
+  { label: "hobbies", value: "hiking, running, football ⚽" },
   { label: "location", value: "Phoenix, AZ" },
   { label: "experience", value: "2+ years" },
   { label: "email", value: "anthony.bosek@gmail.com" },
-  { label: "cell", value: "480) 236 - 9069" },
+  { label: "cell", value: "XXX) XXX - 9069" },
 ];

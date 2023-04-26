@@ -2,7 +2,7 @@ import { Box } from "@mui/material";
 import FlexBetween from "../components/FlexBetween";
 import Arrow from "../components/Arrow";
 import RegularTxt from "../components/RegularTxt";
-import avatar from "../assets/images/avatar.jpg";
+import avatar from "../assets/images/avatar2.jpg";
 import { specsArray, vitalsArray } from "../assets/data/language";
 
 const AboutPage = () => {
@@ -28,9 +28,9 @@ const AboutPage = () => {
 
           <Box p="1rem" borderLeft="1px solid #333">
             <RegularTxt sx={{ textAlign: "center", fontSize: "1.2rem" }}>
-              I’m Anthony. I’m a certified software developer & engineer. I
-              specialize in the <b>MERN</b> stack with an emphasis on logic and
-              functionality. I have a working knowledge of{" "}
+              I’m Anthony Bosek. I’m a certified software developer & engineer.
+              I specialize in the <b>MERN</b> stack with an emphasis on logic
+              and functionality. I have a working knowledge of{" "}
               <b>
                 Redux/ToolKit, Graphql, D3, Nivo, Material-UI, Tailwind,
                 AntDesign,
@@ -57,7 +57,7 @@ const AboutPage = () => {
                 </ul>
               </Box>
               <Box>
-                <RegularTxt ml="2rem">specifics:</RegularTxt>
+                <RegularTxt ml="2rem">specs:</RegularTxt>
                 <ul>
                   {vitalsArray.map(({ label, value }, i) => (
                     <li key={i}>
