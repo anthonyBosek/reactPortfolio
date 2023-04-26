@@ -22,13 +22,13 @@ const HomePage = () => {
           Anthony Bosek
         </Box>
         <Box fontSize="26px" fontWeight="500" m="2vh 0">
-          Software Developer
+          Software Engineer
         </Box>
         <Box width="15%" borderBottom="1px solid dodgerblue" />
         <Box maxWidth="65%" textAlign="center" m="2vh 0">
-          Hey, I’m Anthony Bosek. I’m a Software Developer remotely based in
-          Phoenix, AZ. I love to solve complex problems, write clean code, & get
-          involved in the dev community.
+          Hey, I’m Anthony. I’m a Software Engineer remotely based in Phoenix,
+          AZ. I love to solve complex problems, write clean code, & get involved
+          in the dev community.
         </Box>
         <Box maxWidth="48%" textAlign="center">
           Check out some of my projects, read a little about me, & reach out if
