@@ -18,7 +18,7 @@ const ContactPage = () => {
             ...reach out
           </RegularTxt>
         </Box>
-        <Box alignContent="center">
+        <Box display="flex" justifyContent="center">
           <UnderConstruction />
         </Box>
         {/* <Box>
