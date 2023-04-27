@@ -20,7 +20,7 @@ const AboutPage = () => {
           height="70%"
           width="80%"
           m="2rem auto"
-          gridTemplateColumns="30% 70%"
+          gridTemplateColumns="25% 75%"
         >
           <Box m="1rem 1rem 0 0">
             <img src={avatar} alt="avatar" width="100%" />
@@ -57,7 +57,7 @@ const AboutPage = () => {
                 </ul>
               </Box>
               <Box>
-                <RegularTxt ml="2rem">specs:</RegularTxt>
+                {/* <RegularTxt ml="2rem">specs:</RegularTxt> */}
                 <ul>
                   {vitalsArray.map(({ label, value }, i) => (
                     <li key={i}>
