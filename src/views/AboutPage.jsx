@@ -32,8 +32,8 @@ const AboutPage = () => {
               I specialize in the <b>MERN</b> stack with an emphasis on logic
               and functionality. I have a working knowledge of{" "}
               <b>
-                Redux/ToolKit, Graphql, D3, Nivo, Material-UI, Tailwind,
-                AntDesign,
+                Redux/ToolKit, Graphql, Apollo Client, D3, Nivo, Material-UI,
+                Tailwind, AntDesign,
               </b>{" "}
               & more.
               <Box
