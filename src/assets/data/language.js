@@ -168,7 +168,8 @@ export const vitalsArray = [
   // { label: "birthday", value: "xxxxxxx" },
   { label: "hobbies", value: "hiking, running, football ⚽" },
   { label: "location", value: "Phoenix, AZ" },
-  { label: "experience", value: "2+ years" },
+  { label: "experience", value: "2.5+ years" },
   { label: "email", value: "anthony.bosek@gmail.com" },
+  { label: "github", value: "github.com/anthonyBosek" },
   { label: "cell", value: "XXX) XXX - 9069" },
 ];
