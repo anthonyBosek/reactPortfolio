@@ -170,6 +170,7 @@ export const vitalsArray = [
   { label: "location", value: "Phoenix, AZ" },
   { label: "experience", value: "2.5+ years" },
   { label: "email", value: "anthony.bosek@gmail.com" },
-  { label: "github", value: "github.com/anthonyBosek" },
-  { label: "cell", value: "XXX) XXX - 9069" },
+  { label: "github", value: "/anthonyBosek" },
+  { label: "Fiverr", value: "@developer_ant" },
+  // { label: "cell", value: "XXX) XXX - 9069" },
 ];
